@@ -20,7 +20,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://foodapp-backend-uira.onrender.com",
+        "http://localhost:5500/data/create",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
